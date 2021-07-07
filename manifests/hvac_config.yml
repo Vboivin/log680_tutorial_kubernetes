@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hvac-config
+  namespace: exemple-log680
+data: 
+  HVAC_HOST: https://log680.vincentboivin.ca
+  TEMP_LOW: "20"
+  TEMP_HIGH: "60"
+  NB_TICKS: "10" 
+
