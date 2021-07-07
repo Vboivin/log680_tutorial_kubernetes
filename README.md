@@ -13,6 +13,9 @@
 
 # Manifests
 - All the manifests are in the folder manifests/
+- Those manifests are examples, YOU NEED TO MODIFY THE NAMESPACE
+- For the configmap, you should modify the key name for the name you used for the env variables in your own code
+- You will also need to create two secrets, one for the HVAC_TOKEN and another one for the DockerHub credentials 
 
 # kubectl commands
 - To create a resource from a manifest called test.yml: kubectl apply -f test.yml
