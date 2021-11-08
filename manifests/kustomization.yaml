@@ -1,0 +1,8 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+namespace: log680-tutorial-kubernetes
+resources:
+  - ./hvac.yml
+  - ./hvac_config.yml
+  - ./hvac_namespace.yml
+  - ./hvac_not_so_secret.yml

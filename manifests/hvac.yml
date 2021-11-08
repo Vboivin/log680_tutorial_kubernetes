@@ -2,7 +2,6 @@ apiVersion: v1
 kind: Pod
 metadata:
   name: hvac-log680
-  namespace: exemple-log680
 spec:
   containers:
     - name: hvac-controller
@@ -11,7 +10,7 @@ spec:
         - configMapRef:
             name: hvac-config
         - secretRef:
-            name: hvac-token
+            name: fake-hvac-token
       resources:
         requests:
           memory: "15Mi"
